@@ -78,7 +78,7 @@ export default class SorteiosCrud extends Component {
                     <td>{sorteio.id}</td>
                     <td>{sorteio.produto}</td>
                     <td>{sorteio.detalhamento}</td>
-                    <td>{sorteio.usuario}</td>
+                    <td>{sorteio.usuário}</td>
                     <td>{sorteio.localidade}</td>
                     <td>{sorteio.regras}</td>
                     <td>{sorteio.data_sorteio}</td>
