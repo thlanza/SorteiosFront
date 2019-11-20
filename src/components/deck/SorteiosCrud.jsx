@@ -9,7 +9,7 @@ const headerProps = {
     subtitle: 'Cadastro de sorteios: Incluir, Listar, Alterar e Excluir!'
 }
 
-const baseUrl = 'http://localhost:3001/sorteios'
+const baseUrl = 'https://backend-sorteios.herokuapp.com/sorteios'
 const initialState = {
     sorteios: { produto: '', detalhamento: '', usuario: '', localidade: '', regras: '', data: '' },
     list: []
