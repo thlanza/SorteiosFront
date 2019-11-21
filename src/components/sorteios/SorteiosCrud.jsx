@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Main from '../template/Main'
 import axios from 'axios'
-
+import './sorteios.css'
 
 const headerProps = {
     icon: 'book',
@@ -51,7 +51,7 @@ export default class SorteiosCrud extends Component {
 
     renderTable() {
         return (
-            <table className="table mt-4">
+            <table className="table mt-4 timecard">
                 <thead>
                     <tr>
                         <th>ID</th>
