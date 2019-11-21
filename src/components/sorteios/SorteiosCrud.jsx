@@ -61,6 +61,7 @@ export default class SorteiosCrud extends Component {
                         <th>Localidade</th>
                         <th>Regras</th>
                         <th>Data</th>
+                        <th>Link</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -82,6 +83,7 @@ export default class SorteiosCrud extends Component {
                     <td>{sorteio.localidade}</td>
                     <td>{sorteio.regras}</td>
                     <td>{sorteio.data_sorteio}</td>
+                    <td><a href={`${sorteio.link}`}>Link</a></td>
                 </tr>
             )
         })
