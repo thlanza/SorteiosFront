@@ -1,33 +1,27 @@
 body {
-	background-color: #f6f6ff;
 	font-family: Calibri, Myriad;
 }
 
-
+.background {
+	background-color: white;
+}
 table.timecard {
 	margin: auto;
 	width: 100%;
 	border-collapse: separate;
-	border: 1px solid #f79646;
-}
-
-table.timecard caption {
-	background-color: #f79646;
-	color: #fff;
-	font-size: x-large;
-	font-weight: bold;
-	letter-spacing: .3em;
+	border: 1px solid #282c34;
 }
 
 
 tbody tr:nth-child(odd) {
-  background: #ffe6e6;
+  background: white;
 }
 
 table.timecard thead th {
 	padding: 8px;
-	background-color: #fde9d9;
+	background-color: #282c34;
 	font-size: large;
+	color: white;
 }
 
 table.timecard thead th#thDay {
@@ -42,7 +36,7 @@ table.timecard th, table.timecard td {
 	padding: 3px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #f79646 #ccc;
+	border-color: #282c34;
 }
 
 table.timecard td {
@@ -57,10 +51,14 @@ table.timecard tbody th {
 table.timecard tfoot {
 	font-weight: bold;
 	font-size: large;
-	background-color: #687886;
+	background-color: white;
 	color: #fff;
 }
 
 table.timecard tr.even {
-	background-color: #fde9d9;
+	background-color: white;
 }
+
+
+
+

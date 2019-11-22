@@ -3,6 +3,7 @@ import Main from '../template/Main'
 import axios from 'axios'
 import './sorteios.css'
 
+
 const headerProps = {
     icon: 'book',
     title: 'Sorteios',
@@ -18,7 +19,12 @@ const initialState = {
 
 export default class SorteiosCrud extends Component {
 
-    state = {...initialState }
+    constructor(props) {
+        super(props);
+        this.state = {...initialState,
+                        selectedPage: 0 }
+    }
+   
 
     componentWillMount() {
         axios(baseUrl).then(resp => {
@@ -27,6 +33,14 @@ export default class SorteiosCrud extends Component {
         })
        
     }
+
+    handlePageClicked = data => {
+        let selected = data.selected;
+        this.setState({
+          selectedPage: selected
+        })
+        console.log(selected)
+      };
 
     clear() {
         this.setState({ sorteios: initialState.sorteios })
@@ -51,6 +65,7 @@ export default class SorteiosCrud extends Component {
 
     renderTable() {
         return (
+            <div>
             <table className="table mt-4 timecard">
                 <thead>
                     <tr>
@@ -67,7 +82,9 @@ export default class SorteiosCrud extends Component {
                 <tbody>
                     {this.renderRows()}
                 </tbody>
-            </table>        
+            </table>
+            </div>
+
         )
     }
 
