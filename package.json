@@ -7,7 +7,7 @@
     "axios": "0.18.0",
     "bootstrap": "4.1.1",
     "font-awesome": "4.7.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "paginate-array": "^2.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
